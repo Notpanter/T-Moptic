@@ -236,7 +236,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
     width: 70%;
     padding: 10px 2%;
-    border-radius: 7px;
     border: 2px solid silver;
     font-size: 0.9em;
     color: #4a4a4a;
@@ -248,7 +247,6 @@ h1, h2, h3, h4, h5 {
 
 .btn {
     float: left;
-    border-radius: 5px;
     padding: 5px 9px;
     font-size: 1.2em;
     background-color: #ec6550;
