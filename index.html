@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T&M OPTICA</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/as.png">
+  </head>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>
+      <img src="img/as.png">
+      </span>
+    </div>
+    <div id="about">
+      <a href="#" title="Opportunities" onclick="slowScroll('#main')">Opportunities</a>
+      <a href="#" onclick="slowScroll('#overview')" title="Store">Store</a>
+      <a href="#" onclick="slowScroll('#contacts')" title="Contact">Contact</a>
+      <a href="#" onclick="slowScroll('#faq')" title="About">About Us</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>LOOKING FOR YOUR GLASSES?</h1>
+    <h3>We will help!</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Our services will help you!</h2>
+      <span> WEBSITE MADE BY TALGAT AND MARGULAN</span>
+    </div>
+    <div class="text">
+      <span> THERE MUST BE PRICES AND DISCOUNTS
+          SE2103 Talgat Tursymbek & Margulan Almabay </span>
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Store</h2>
+    <h4>it's easier with us</h4>
+
+    <div class="img">
+      <img src="https://avatars.mds.yandex.net/i?id=cd211526d78eff3b82ed83591c7ce2b5-5150784-images-thumbs&n=13" alt="">
+      <span>Order glasses fitting at home</span>
+    </div>
+    <div class="img">
+      <img src="https://avatars.mds.yandex.net/i?id=f9c26206d711c8f339aeed59b25c0dc7-5279616-images-thumbs&n=13" alt="">
+      <span>Order delivery of contact lenses</span>
+    </div>
+  </div>
+
+  <div id="contacts">
+    <center><h5>Feedback</h5></center>
+    <form id="form_input">
+      <label for="name">Name </label><br>
+      <input type="text" name="name" id="name"><br>
+      <label for="email">E-mail</label><br>
+      <input type="email"  name="email" id="email"><br>
+      <label for="message">Massages </label><br>
+      <textarea  name="message" id="message"></textarea><br>
+      <div id="mess_send" class="btn">SEND</div>
+    </form>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Payment</span><br>
+      <span class="heading">How will the payment be processed?</span>
+      <p>Does not work ,)))</p>
+    </div>
+    <div>
+      <span class="title">Information</span><br>
+      <span class="heading">What is included in the service</span>
+      <p>No information :))</p>
+    </div>
+    <div>
+      <span class="title">Guarantees</span><br>
+      <span class="heading">What guarantees are there</span>
+      <p>No guarantee)))</p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+  </body>
+</html>
